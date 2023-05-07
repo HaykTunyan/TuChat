@@ -1,0 +1,95 @@
+[
+    {
+        "id": 1,
+        "user": "Dell",
+        "image": "",
+        "lastMessage": {
+            "text": "Okay",
+            "createdAt": "2023-04-26T15:40:00.000Z"
+        }
+
+    },
+    {
+        "id": 2,
+        "user": "Jhone",
+        "image": "",
+        "lastMessage": {
+            "text": "Okay",
+            "createdAt": "2023-04-22T22:23:00.000Z"
+        }
+
+    },
+    {
+        "id": 3,
+        "user": "Helena",
+        "image": "",
+        "lastMessage": {
+            "text": "Okay",
+            "createdAt": "2023-03-04T14:48:00.000Z"
+        }
+
+    },
+    {
+        "id": "4",
+        "user": "Vlad",
+        "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/jeff.jpeg",
+        "lastMessage": {
+          "id": "m4",
+          "text": "Could you please review my last merge?",
+          "createdAt": "2022-10-12T14:48:00.000Z"
+        }
+      },
+      {
+        "id": "5",
+        "user": "Elon Musk",
+        "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/elon.png",
+        "lastMessage": {
+          "id": "m5",
+          "text": "I would be happy meeting you",
+          "createdAt": "2022-10-11T14:48:00.000Z"
+        }
+      },
+      {
+        "id": "6",
+        "user": "Adrian",
+        "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/graham.jpg",
+        "lastMessage": {
+          "id": "m6",
+          "text": "I think I have a solution for tha.",
+          "createdAt": "2022-10-10T14:48:00.000Z"
+        }
+      },
+      {
+        "id": "7",
+        "user": "Borja",
+        "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/zuck.jpeg",
+        
+        "lastMessage": {
+          "id": "m7",
+          "text": "How are you doing?",
+          "createdAt": "2022-10-09T14:30:00.000Z"
+        }
+      },
+      {
+        "id": "8",
+        "user": "Mery",
+        "image": "https://image.shutterstock.com/image-vector/super-mom-hero-superhero-cartoon-600w-720015928.jpg",
+        
+        "lastMessage": {
+          "id": "m8",
+          "text": "Dear, what did you eat, today?",
+          "createdAt": "2020-09-27T15:40:00.000Z"
+        }
+      },
+      {
+        "id": "9",
+        "user": "Andrei",
+        "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg",
+        "lastMessage": {
+          "id": "m8",
+          "text": "What about our podcast?",
+          "createdAt": "2020-09-27T15:40:00.000Z"
+        }
+      }
+
+]
