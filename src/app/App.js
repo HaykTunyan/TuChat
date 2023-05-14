@@ -22,8 +22,12 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import {  ChatListItem } from  './src/components';
-import { ChatView, MessageView } from './src/view';
+import { ChatListItem } from '../components';
+import { ChatView, MessageView } from '../view';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
 
 
 function App() {
@@ -35,13 +39,14 @@ function App() {
 
   return (
     <View style={styles.globalContainer}>
-      {/* <ChatListItem chat={chats} /> */}
-      
-      {/* <ChatView /> */}
 
-      <MessageView />
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Messages">
+          <Stack.Screen name="Messages" component={MessageView} />
+          <Stack.Screen name='Chat' component={ChatView} />
+        </Stack.Navigator>
+      </NavigationContainer>
 
-      
     </View>
   );
 }
@@ -49,9 +54,9 @@ function App() {
 const styles = StyleSheet.create({
 
   globalContainer: {
-    flex:1,
+    flex: 1,
     // alignItems: 'center',
-    justifyContent:'center'
+    justifyContent: 'center'
   },
 
 });
