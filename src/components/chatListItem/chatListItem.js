@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Text, View, StyleSheet } from "react-native";
+import { Image, Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 dayjs.extend(relativeTime)
@@ -8,8 +8,24 @@ dayjs.extend(relativeTime)
 const Accont = "../../assets/img/account.jpg"
 
 export function ChatListItem({ chats }) {
-    console.log(" chats ", chats)
+
+    /**
+     * Hooks.
+     */
+    
+    
+    console.log(" chats ", chats);
+
+
+    const handleMeesage = () => {
+
+    }
+
+
     return (
+        <TouchableOpacity  onPress={handleMeesage}>
+
+    
         <View style={styles.itemContainer} key={chats.id} >
             {chats?.image ? (
                 <Image source={{ uri: chats?.image }} style={styles.image} />
@@ -31,6 +47,8 @@ export function ChatListItem({ chats }) {
                 </Text>
             </View>
         </View>
+
+        </TouchableOpacity>
     )
 }
 
