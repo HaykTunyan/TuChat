@@ -12,42 +12,34 @@ export function ChatListItem({ chats }) {
     /**
      * Hooks.
      */
-    
-    
+
     console.log(" chats ", chats);
 
-
-    const handleMeesage = () => {
-
-    }
-
+    const handleMeesage = () => { }
 
     return (
-        <TouchableOpacity  onPress={handleMeesage}>
+        <TouchableOpacity onPress={handleMeesage}>
+            <View style={styles.itemContainer} key={chats.id} >
+                {chats?.image ? (
+                    <Image source={{ uri: chats?.image }} style={styles.image} />
+                ) : (
+                    <Image source={require(Accont)} style={styles.image} />
+                )}
 
-    
-        <View style={styles.itemContainer} key={chats.id} >
-            {chats?.image ? (
-                <Image source={{ uri: chats?.image }} style={styles.image} />
-            ) : (
-                <Image source={require(Accont)} style={styles.image} />
-            )}
-
-            <View style={styles.content}>
-                <View style={styles.row}>
-                    <Text numberOfLines={1} style={styles.name}>
-                        {chats?.user}
-                    </Text>
-                    <Text>
-                        {dayjs(chats?.lastMessage?.createdAt).fromNow()}
+                <View style={styles.content}>
+                    <View style={styles.row}>
+                        <Text numberOfLines={1} style={styles.name}>
+                            {chats?.user}
+                        </Text>
+                        <Text>
+                            {dayjs(chats?.lastMessage?.createdAt).fromNow()}
+                        </Text>
+                    </View>
+                    <Text numberOfLines={1} style={styles.messages}>
+                        {chats.lastMessage?.text}
                     </Text>
                 </View>
-                <Text numberOfLines={1} style={styles.messages}>
-                    {chats.lastMessage?.text}
-                </Text>
             </View>
-        </View>
-
         </TouchableOpacity>
     )
 }

@@ -4,13 +4,11 @@ import { ChatListItem } from "../../components";
 import chats from '../../utils/json/chat.json'
 
 export function ChatView() {
-
     /**
      * Hooks.
      */
 
-    console.log(" chat Opetion  ", chats)
-
+    console.log(" chat Opetion", chats)
 
     const handleOpenChat = () => {
         console.warn(" Chat Opetion ")
@@ -18,12 +16,10 @@ export function ChatView() {
 
     return (
         <View>
-         
-                <FlatList
-                    data={chats}
-                    renderItem={({ item }) => <ChatListItem chats={item} />}
-                />
-       
+            <FlatList
+                data={chats}
+                renderItem={({ item }) => <ChatListItem chats={item} />}
+            />
         </View>
     )
 }

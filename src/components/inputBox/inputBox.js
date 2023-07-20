@@ -2,25 +2,19 @@ import React, { useState }  from 'react';
 import { View, Button, StyleSheet, TextInput, Image, TouchableOpacity } from 'react-native';
 
 export function InputBox() {
-
   /**
    * Hooks.
    * 
    */
 
-
   const [ sendMessages , setSendMessages ] = useState('')
-
-
 
   const addFile = () => {
     console.warn(" add file ")
   }
 
   const handleSendMessages = () => {
-
     setSendMessages("");
-
     console.warn(" send Info ",sendMessages  );
   }
 
@@ -39,8 +33,6 @@ export function InputBox() {
     </View>
   )
 }
-
-
 
 const styles = StyleSheet.create({
   inputContainer: {

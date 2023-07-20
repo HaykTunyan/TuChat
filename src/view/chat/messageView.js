@@ -10,22 +10,18 @@ import { InputBox, Messages } from '../../components';
 export function MessageView() {
     return (
         // <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : "height"}>
-            <ImageBackground source={BG} style={styles.bg}>
-
-                <FlatList
-
-                    data={messages}
-                    renderItem={({ item }) =>
-                        <Messages messages={item} inverted />
-                    }
-                />
-                <InputBox />
-            </ImageBackground>
-
+        <ImageBackground source={BG} style={styles.bg}>
+            <FlatList
+                data={messages}
+                renderItem={({ item }) =>
+                    <Messages messages={item} inverted />
+                }
+            />
+            <InputBox />
+        </ImageBackground>
         // </KeyboardAvoidingView >
     )
 }
-
 
 const styles = StyleSheet.create({
     bg: {

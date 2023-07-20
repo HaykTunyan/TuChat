@@ -1,16 +1,18 @@
 import { View, Text, StyleSheet, TextInput } from 'react-native';
 import React from 'react';
 import dayjs from 'dayjs';
-import { formatDistance, subDays ,format, compareAsc  } from 'date-fns';
+import { formatDistance, subDays, format, compareAsc } from 'date-fns';
 
 export function Messages({ messages }) {
+  /**
+   * Hooks.
+   */
 
   const isMyMessages = () => {
     return messages.user.id === "u1"
   }
 
   return (
-
     <View style={[styles.constainer, {
       backgroundColor: messages.user.id === "u1" ? "green" : "white",
       alignSelf: messages.user.id === "u1" ? "flex-end" : "flex-start"
@@ -29,7 +31,6 @@ export function Messages({ messages }) {
     </View>
   )
 };
-
 
 const styles = StyleSheet.create({
   constainer: {
